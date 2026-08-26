@@ -1,0 +1,1128 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "BalBal Medya";
+}
+
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <style>@@layer base{html,body{margin:0;padding:0;background-color:#050505;}body{overscroll-behavior:none;background-image:url('https://www.transparenttextures.com/patterns/stardust.png');background-repeat:repeat;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-container":"#849bc8","secondary-container":"#5c4517","on-surface":"#e5e2e1","on-error-container":"#ffdad6","tertiary":"#b0c7f6","on-secondary":"#412d01","inverse-primary":"#77591c","surface":"#131313","on-tertiary":"#173057","tertiary-fixed":"#d7e3ff","outline":"#9a8f80","error-container":"#93000a","surface-tint":"#e9c179","surface-container-lowest":"#0e0e0e","surface-container-low":"#1c1b1b","secondary-fixed":"#ffdea5","on-secondary-fixed-variant":"#5a4315","on-surface-variant":"#d1c5b4","on-primary-fixed":"#271900","outline-variant":"#4e4639","on-primary-container":"#442f00","obsidian-light":"#121212","secondary":"#e3c288","primary-container":"#b99552","on-primary":"#412d00","surface-dim":"#131313","error":"#ffb4ab","secondary-fixed-dim":"#e3c288","surface-variant":"#353534","on-tertiary-fixed":"#001b3f","on-error":"#690005","primary-fixed-dim":"#e9c179","primary-fixed":"#ffdea6","warm-ivory":"#F1EBDD","inverse-surface":"#e5e2e1","surface-bright":"#3a3939","on-secondary-container":"#d4b47b","on-background":"#e5e2e1","on-primary-fixed-variant":"#5d4204","primary":"#e9c179","surface-container-highest":"#353534","on-tertiary-container":"#193259","on-tertiary-fixed-variant":"#2f476f","background":"#131313","tertiary-fixed-dim":"#b0c7f6","surface-container-high":"#2a2a2a","inverse-on-surface":"#313030","on-secondary-fixed":"#271900","surface-container":"#201f1f"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"unit":"8px","gutter":"24px","margin-mobile":"20px","margin-desktop":"80px","max-width":"1440px"},"fontFamily":{"headline-lg":["EB Garamond"],"headline-md":["EB Garamond"],"label-caps":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"display-lg":["EB Garamond"],"headline-lg-mobile":["EB Garamond"]},"fontSize":{"headline-lg":["48px",{"lineHeight":"56px","fontWeight":"500"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"400"}],"display-lg":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"500"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"500"}]}}}}</script>
+</head>
+<body class="bg-background font-body-md text-on-background">
+    <header class="fixed top-0 w-full z-50 bg-background/70 backdrop-blur-md border-b border-outline-variant/30"><div class="h-[80px] max-w-max-width mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><img alt="BALBAL MEDYA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8EcXazkYAHBsL1862NV597EIFL8MqEtg5n9lzIwzL-FTmz1-JILc9wxYd-FWH5Svfdh1_H8GIL2Hdn4F7BgEX_x8VA3hbvjIk_ZL55f-44WZ2GIICRhWpck6mBUq4k48MXHq2jLlkVKYd21zVy33loWxXm1nOjGa8fR1nuE-9bURTRH8FnolF9-xmP_OZ0u-00CPrR7t9w_DpTfO9hl3_1o6hsxNMtisgNpIm4F29qF593lD1dlpstA" /><span class="font-headline-md text-headline-md text-primary tracking-widest uppercase">BALBAL</span></div><nav class="hidden xl:flex items-center gap-8" data-active-classes="text-primary border-b border-primary"><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="kurumsal" href="#">KURUMSAL</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="yapim" href="#">YAPIM</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="dijital-medya" href="#">DİJİTAL MEDYA</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="kulturel-diplomasi" href="#">KÜLTÜREL DİPLOMASİ</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="organizasyonlar" href="#">ORGANİZASYONLAR</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="teknoloji" href="#">TEKNOLOJİ</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="projeler" href="#">PROJELER</a><a class="font-headline-md text-label-caps text-on-surface-variant hover:text-primary transition-all duration-300" data-path="etkinlikler" href="#">ETKİNLİKLER</a></nav><div class="flex items-center gap-6"><span class="material-symbols-outlined text-primary cursor-pointer">search</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header>
+    <main class="w-full pt-[80px]">
+        <div class="flex flex-col w-full">
+            <!-- Hero Section -->
+            <section class="relative w-full min-h-screen overflow-hidden -mt-[80px] bg-[#080808] group">
+
+                <!-- ========================================= -->
+                <!-- CINEMATIC BACKGROUND -->
+                <!-- ========================================= -->
+
+                <div class="absolute inset-0 overflow-hidden">
+
+                    <!-- Ana görsel -->
+                    <div class="absolute inset-0
+                    bg-[url('/images/arkaplan.png')]
+                    bg-cover
+                    bg-center
+                    scale-[1.03]
+                    transition-transform
+                    duration-[5000ms]
+                    ease-out
+                    group-hover:scale-[1.07]">
+                    </div>
+
+                    <!-- Daha aydınlık sinematik overlay -->
+                    <div class="absolute inset-0
+                    bg-[linear-gradient(
+                    90deg,
+                    rgba(5,5,5,.72)_0%,
+                    rgba(5,5,5,.48)_35%,
+                    rgba(5,5,5,.18)_68%,
+                    rgba(5,5,5,.25)_100%
+                    )]">
+                    </div>
+
+                    <!-- Üst geçiş -->
+                    <div class="absolute inset-0
+                    bg-[linear-gradient(
+                    180deg,
+                    rgba(5,5,5,.75)_0%,
+                    transparent_25%,
+                    transparent_70%,
+                    rgba(5,5,5,.88)_100%
+                    )]">
+                    </div>
+
+                    <!-- Altın ışık -->
+                    <div class="absolute
+                    -right-[150px]
+                    top-[20%]
+                    w-[650px]
+                    h-[650px]
+                    rounded-full
+                    bg-primary/[0.12]
+                    blur-[170px]
+                    pointer-events-none">
+                    </div>
+
+                    <!-- Sol hafif sıcak ışık -->
+                    <div class="absolute
+                    left-[5%]
+                    top-[35%]
+                    w-[350px]
+                    h-[350px]
+                    rounded-full
+                    bg-[#d9ad5c]/[0.06]
+                    blur-[130px]
+                    pointer-events-none">
+                    </div>
+
+                    <!-- Grain -->
+                    <div class="absolute inset-0
+                    bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]
+                    opacity-[0.055]
+                    mix-blend-screen
+                    pointer-events-none">
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================= -->
+                <!-- TOP EDITORIAL BAR -->
+                <!-- ========================================= -->
+
+                <div class="absolute top-[105px] left-0 right-0
+                px-6 md:px-12 lg:px-[75px]
+                z-20">
+
+                    <div class="max-w-[1440px] mx-auto
+                    flex items-center justify-between">
+
+                        <div class="flex items-center gap-4">
+
+                            <span class="w-14 h-[1px] bg-primary"></span>
+
+                            <span class="text-[10px]
+                             md:text-[11px]
+                             font-semibold
+                             tracking-[0.38em]
+                             uppercase
+                             text-primary">
+                                BİR VİZYON İNŞASI
+                            </span>
+
+                        </div>
+
+                        <div class="hidden md:flex items-center gap-4">
+
+                            <span class="text-[10px]
+                             tracking-[0.3em]
+                             text-white/50">
+                                EST. 2026
+                            </span>
+
+                            <span class="w-12 h-[1px] bg-white/20"></span>
+
+                            <span class="text-[10px]
+                             tracking-[0.3em]
+                             text-white/40">
+                                ISTANBUL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================= -->
+                <!-- MAIN CONTENT -->
+                <!-- ========================================= -->
+
+                <div class="relative z-10 min-h-screen
+                max-w-[1440px]
+                mx-auto
+                px-6 md:px-12 lg:px-[75px]
+                flex items-center">
+
+                    <div class="w-full
+                    grid grid-cols-1
+                    lg:grid-cols-12
+                    gap-12
+                    items-center">
+
+
+                        <!-- ================================= -->
+                        <!-- LEFT -->
+                        <!-- ================================= -->
+
+                        <div class="lg:col-span-8
+                        pt-24
+                        lg:pt-16">
+
+                            <!-- Küçük başlık -->
+
+                            <div class="flex items-center gap-4
+                            mb-8
+                            animate-[fadeUp_.8s_ease-out_both]">
+
+                                <span class="text-[10px]
+                                 font-semibold
+                                 tracking-[0.38em]
+                                 uppercase
+                                 text-white/65">
+                                    BALBAL MEDYA
+                                </span>
+
+                                <span class="w-20 h-[1px] bg-primary/70"></span>
+
+                            </div>
+
+
+                            <!-- ================================= -->
+                            <!-- HERO TITLE -->
+                            <!-- ================================= -->
+
+                            <h1 class="font-display-lg
+                           text-[clamp(58px,7vw,108px)]
+                           leading-[0.88]
+                           tracking-[-0.045em]
+                           text-white
+                           max-w-[1050px]
+                           animate-[fadeUp_1s_.08s_ease-out_both]">
+
+                                Kültürü
+
+                                <span class="text-white/55">
+                                    Yalnızca
+                                </span>
+
+                                <br />
+
+                                Anlatmıyoruz.
+
+                                <br />
+
+                                <span class="relative inline-block
+                                 text-primary
+                                 italic">
+
+                                    Geleceğe Taşıyoruz.
+
+                                    <!-- Altın çizgi -->
+                                    <span class="absolute
+                                     left-0
+                                     -bottom-3
+                                     w-[65%]
+                                     h-[1px]
+                                     bg-primary/50">
+                                    </span>
+
+                                </span>
+
+                            </h1>
+
+
+                            <!-- ================================= -->
+                            <!-- DESCRIPTION -->
+                            <!-- ================================= -->
+
+                            <p class="mt-12
+                          max-w-[650px]
+                          text-[16px]
+                          md:text-[18px]
+                          leading-[1.8]
+                          text-white/70
+                          animate-[fadeUp_1s_.22s_ease-out_both]">
+
+                                Sinema, medya, stratejik iletişim,
+                                kültürel diplomasi ve teknolojiyi
+                                aynı vizyon altında buluşturan
+                                yeni nesil medya platformu.
+
+                            </p>
+
+
+                            <!-- ================================= -->
+                            <!-- BUTTONS -->
+                            <!-- ================================= -->
+
+                            <div class="flex flex-wrap
+                            items-center
+                            gap-4
+                            mt-10
+                            animate-[fadeUp_1s_.36s_ease-out_both]">
+
+                                <!-- Primary -->
+
+                              
+
+
+                                <!-- Secondary -->
+
+
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ================================= -->
+                        <!-- RIGHT EDITORIAL PANEL -->
+                        <!-- ================================= -->
+
+                        <div class="hidden lg:flex
+                        lg:col-span-4
+                        justify-end
+                        items-center">
+
+                            <div class="relative
+                            w-[260px]
+                            border-l
+                            border-white/20
+                            pl-9
+                            py-10
+                            animate-[fadeIn_1.4s_.4s_ease-out_both]">
+
+                                <!-- panel glow -->
+
+                                <div class="absolute
+                                -left-[1px]
+                                top-0
+                                w-[1px]
+                                h-20
+                                bg-primary">
+                                </div>
+
+
+                                <span class="block
+                                 text-[10px]
+                                 tracking-[0.35em]
+                                 uppercase
+                                 text-primary
+                                 mb-8">
+                                    ODAĞIMIZ
+                                </span>
+
+
+                                <div class="space-y-7">
+
+                                    <!-- 01 -->
+
+                                    <div class="group/item cursor-default">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <span class="text-[9px]
+                                             tracking-widest
+                                             text-primary/70">
+                                                01
+                                            </span>
+
+                                            <span class="w-5 h-[1px]
+                                             bg-white/20
+                                             group-hover/item:bg-primary
+                                             transition-all">
+                                            </span>
+
+                                        </div>
+
+                                        <span class="block
+                                         mt-1
+                                         font-headline-md
+                                         text-[25px]
+                                         text-white/85
+                                         group-hover/item:text-primary
+                                         transition-all
+                                         duration-300">
+                                            Sinema
+                                        </span>
+
+                                    </div>
+
+
+                                    <!-- 02 -->
+
+                                    <div class="group/item cursor-default">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <span class="text-[9px]
+                                             tracking-widest
+                                             text-primary/70">
+                                                02
+                                            </span>
+
+                                            <span class="w-5 h-[1px]
+                                             bg-white/20
+                                             group-hover/item:bg-primary
+                                             transition-all">
+                                            </span>
+
+                                        </div>
+
+                                        <span class="block
+                                         mt-1
+                                         font-headline-md
+                                         text-[25px]
+                                         text-white/85
+                                         group-hover/item:text-primary
+                                         transition-all
+                                         duration-300">
+                                            Medya
+                                        </span>
+
+                                    </div>
+
+
+                                    <!-- 03 -->
+
+                                    <div class="group/item cursor-default">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <span class="text-[9px]
+                                             tracking-widest
+                                             text-primary/70">
+                                                03
+                                            </span>
+
+                                            <span class="w-5 h-[1px]
+                                             bg-white/20
+                                             group-hover/item:bg-primary
+                                             transition-all">
+                                            </span>
+
+                                        </div>
+
+                                        <span class="block
+                                         mt-1
+                                         font-headline-md
+                                         text-[25px]
+                                         text-white/85
+                                         group-hover/item:text-primary
+                                         transition-all
+                                         duration-300">
+                                            Kültür
+                                        </span>
+
+                                    </div>
+
+
+                                    <!-- 04 -->
+
+                                    <div class="group/item cursor-default">
+
+                                        <div class="flex items-center gap-3">
+
+                                            <span class="text-[9px]
+                                             tracking-widest
+                                             text-primary/70">
+                                                04
+                                            </span>
+
+                                            <span class="w-5 h-[1px]
+                                             bg-white/20
+                                             group-hover/item:bg-primary
+                                             transition-all">
+                                            </span>
+
+                                        </div>
+
+                                        <span class="block
+                                         mt-1
+                                         font-headline-md
+                                         text-[25px]
+                                         text-white/85
+                                         group-hover/item:text-primary
+                                         transition-all
+                                         duration-300">
+                                            Teknoloji
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Panel bottom -->
+
+                                <div class="mt-10
+                                pt-5
+                                border-t
+                                border-white/10">
+
+                                    <span class="text-[9px]
+                                     tracking-[0.25em]
+                                     text-white/35">
+                                        CULTURE • MEDIA • VISION
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================= -->
+                <!-- BOTTOM SCROLL INDICATOR -->
+                <!-- ========================================= -->
+
+                <div class="absolute
+                bottom-8
+                right-8
+                md:right-12
+                lg:right-[75px]
+                z-20
+                flex items-center gap-4
+                text-[9px]
+                tracking-[0.35em]
+                text-white/40">
+
+                    SCROLL
+
+                    <span class="text-primary text-lg animate-bounce">
+                        ↓
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================================= -->
+            <!-- HERO ANIMATIONS -->
+            <!-- ========================================= -->
+
+            <style>
+
+                @@keyframes fadeUp {
+                    0%
+
+                {
+                    opacity: 0;
+                    transform: translateY(35px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                }
+
+                @@keyframes fadeIn {
+                    0%
+
+                {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+                }
+            </style>
+            <!-- Manifesto Section -->
+            <section class="w-full py-32 md:py-40 px-margin-mobile md:px-margin-desktop bg-background relative overflow-hidden">
+
+                <!-- Ambient Glow -->
+                <div class="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[140px] pointer-events-none"></div>
+                <div class="absolute bottom-0 -left-40 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[160px] pointer-events-none"></div>
+
+                <div class="max-w-max-width mx-auto relative z-10">
+
+                    <!-- Section Header -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-20">
+
+                        <div class="md:col-span-4">
+                            <div class="flex items-center gap-4">
+                                <span class="w-12 h-[1px] bg-primary"></span>
+                                <span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.25em]">
+                                    Hakkımızda
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="md:col-span-8">
+                            <h2 class="font-display-lg text-display-lg text-on-surface leading-[1.05]">
+                                Kültür, medya ve
+                                <span class="text-primary italic">vizyonu</span>
+                                aynı çatı altında buluşturuyoruz.
+                            </h2>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Main Content -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+
+                        <!-- IMAGE -->
+                        <div class="lg:col-span-5">
+
+                            <div class="relative group">
+
+                                <!-- Decorative Frame -->
+                                <div class="absolute -top-5 -left-5 w-24 h-24 border-t border-l border-primary/50 transition-all duration-700 group-hover:-top-8 group-hover:-left-8"></div>
+
+                                <div class="absolute -bottom-5 -right-5 w-24 h-24 border-b border-r border-primary/50 transition-all duration-700 group-hover:-bottom-8 group-hover:-right-8"></div>
+
+                                <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low border border-outline-variant/20">
+
+                                    <img src="/images/arkaplan.png"
+                                         alt="Balbal Medya"
+                                         class="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" />
+
+                                    <!-- Image Overlay -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                                    <!-- Image Label -->
+                                    <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+
+                                        <div>
+                                            <span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">
+                                                BALBAL MEDYA
+                                            </span>
+
+                                            <p class="font-headline-md text-headline-md text-white mt-2">
+                                                Yeni Nesil Medya Vizyonu
+                                            </p>
+                                        </div>
+
+                                        <span class="material-symbols-outlined text-primary text-[32px] opacity-80">
+                                            arrow_outward
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TEXT -->
+                        <div class="lg:col-span-7 lg:pl-8">
+
+                            <div class="max-w-2xl">
+
+                                <span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">
+                                    Biz Kimiz?
+                                </span>
+
+                                <h3 class="font-headline-lg text-headline-lg text-on-surface mt-5 leading-tight">
+                                    Sadece içerik üretmiyor,
+                                    <span class="text-on-surface-variant italic">
+                                        değer ve etki
+                                    </span>
+                                    oluşturuyoruz.
+                                </h3>
+
+                                <p class="font-body-lg text-body-lg text-on-surface-variant mt-8 leading-relaxed">
+                                    BALBAL MEDYA; sinema, medya, stratejik iletişim, kültürel diplomasi,
+                                    teknoloji ve organizasyon alanlarını ortak bir vizyon altında
+                                    buluşturan yeni nesil bir medya yapısıdır.
+                                </p>
+
+                                <p class="font-body-md text-body-md text-on-surface-variant/80 mt-5 leading-relaxed">
+                                    Geleneksel kültürel değerleri çağdaş anlatım biçimleriyle
+                                    buluşturuyor; projeler, yapımlar, etkinlikler ve dijital
+                                    deneyimler aracılığıyla markalar ve kurumlar için kalıcı
+                                    iletişim değerleri üretiyoruz.
+                                </p>
+
+
+                                <!-- VALUES -->
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 pt-10 border-t border-outline-variant/20">
+
+                                    <!-- VALUE 1 -->
+                                    <div class="group">
+
+                                        <span class="material-symbols-outlined text-primary text-[28px] transition-transform duration-500 group-hover:-translate-y-1">
+                                            visibility
+                                        </span>
+
+                                        <h4 class="font-label-caps text-label-caps text-on-surface mt-4 uppercase tracking-wider">
+                                            Vizyon
+                                        </h4>
+
+                                        <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                                            Geleceği bugünden tasarlamak.
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VALUE 2 -->
+                                    <div class="group">
+
+                                        <span class="material-symbols-outlined text-primary text-[28px] transition-transform duration-500 group-hover:-translate-y-1">
+                                            auto_awesome
+                                        </span>
+
+                                        <h4 class="font-label-caps text-label-caps text-on-surface mt-4 uppercase tracking-wider">
+                                            Yaratıcılık
+                                        </h4>
+
+                                        <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                                            Fikri güçlü deneyimlere dönüştürmek.
+                                        </p>
+
+                                    </div>
+
+
+                                    <!-- VALUE 3 -->
+                                    <div class="group">
+
+                                        <span class="material-symbols-outlined text-primary text-[28px] transition-transform duration-500 group-hover:-translate-y-1">
+                                            public
+                                        </span>
+
+                                        <h4 class="font-label-caps text-label-caps text-on-surface mt-4 uppercase tracking-wider">
+                                            Etki
+                                        </h4>
+
+                                        <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                                            Yerelden dünyaya değer üretmek.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- CTA -->
+                                <div class="mt-12">
+
+                                   
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- Vision / Core Areas Section -->
+            <section class="w-full py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10">
+                <div class="max-w-max-width mx-auto flex flex-col gap-16">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+                        <div class="flex flex-col gap-4 max-w-2xl">
+                            <div class="flex items-center gap-4">
+                                <div class="w-2 h-2 rounded-full bg-primary"></div>
+                                <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Faaliyet Alanları</span>
+                            </div>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface">360° Kültür ve Medya Ekosistemi</h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            Disiplinlerarası yaklaşımımızla, her projeyi bir kültür mirası titizliğinde ele alıyor ve yarının teknolojisiyle birleştiriyoruz.
+                        </p>
+                    </div>
+                    <!-- Bento Grid for Core Areas -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+                        <!-- Yapım (Image 7) -->
+                        <div class="md:col-span-2 md:row-span-1 group relative overflow-hidden bg-surface-container-low border border-outline-variant/20 flex flex-col justify-end p-8 min-h-[300px]">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQ0XMIkpOYNLQTF9GKot2PeSiYWleXbHlxFnqRbqYBPau37wIbQ8BzIEqdaQK8pqeN0kUl9pQs8A64X1qnbNw5jwg853lslN3oIxAjV6B7pTlzZb74l2v12sYEh7sVkCB7VyA3Pq97IySQ6jzBf91i0OuFnTsqbs_oLNSszc_b4SGK8Gzd4oSezbteuZ3T6JdIrjJzVhARI_kTVt9TduAgfLGemkHxGeEXAS5JbGy4-_JM6bcv_82Gng');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+                            <div class="relative z-10 flex flex-col gap-2">
+                                <span class="font-label-caps text-label-caps text-primary">01 / LÜKS STANDARTLAR</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Yapım</h3>
+                            </div>
+                        </div>
+                        <!-- Kültürel Diplomasi (Image 5) -->
+                        <div class="md:col-span-1 md:row-span-2 group relative overflow-hidden bg-surface-container-low border border-outline-variant/20 flex flex-col justify-end p-8 min-h-[400px]">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-50 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-70" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDfsAEv1peVSbyejWzNVDHQWNDb9IOWLnYSpplPeB3MphBAqeDimIQDHGTxdJF_ZY_MEYeMbiXjIzqxJ2TmufE7yMF1CkTsNS-yoVVukT2O2k2F72n5zaY7J9z3XXuXgyg2muS4t2P_sAm2DLO1v1_W_SNhxJAqEVfwHgsvvrjAwrLlF0OE4ItCoxkRf6_4HXmx9dWgWYxqs061o97ak58ItFC0PDnz_WswadB4yfHjyP0B-MF9ZrE25Q');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+                            <div class="relative z-10 flex flex-col gap-2">
+                                <span class="font-label-caps text-label-caps text-primary">02 / KÜRESEL KÖPRÜLER</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Kültürel Diplomasi</h3>
+                            </div>
+                        </div>
+                        <!-- Dijital Medya -->
+                        <div class="md:col-span-1 md:row-span-1 group relative overflow-hidden bg-surface-container border border-outline-variant/20 flex flex-col justify-between p-8 hover:border-primary/50 transition-colors">
+                            <div class="absolute right-0 top-0 text-[120px] font-display-lg text-surface-variant/30 leading-none -mt-4 -mr-4 pointer-events-none">DM</div>
+                            <span class="material-symbols-outlined text-on-surface-variant text-[32px]">campaign</span>
+                            <div class="flex flex-col gap-2 relative z-10 mt-16">
+                                <span class="font-label-caps text-label-caps text-primary">03 / ETKİLEŞİM</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Dijital Medya</h3>
+                            </div>
+                        </div>
+                        <!-- Teknoloji (Image 4) -->
+                        <div class="md:col-span-1 md:row-span-1 group relative overflow-hidden bg-surface-container-low border border-outline-variant/20 flex flex-col justify-end p-8 min-h-[300px]">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-60 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-80" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAY-_zOS_TuvAXMFbegUen1HRI4dBpsy2P64dwoAd5GGb6aD98xIPUAdlWMA1R8nL0whwwPDWXyY24WMzZBXTHB88g36XaI1GQ9o7W9gJ3XAeqHFTnKbxH07oX6GEj0n740P9pWaUShfreLid_Nq7yabf8hu3rKREZa7F4V-PKOwjLXBE0TX_2QdjlcF69TymuXZiGIC34DtgUf2FxFujLxGyJd8pTDo3b7sbu9_5lvrOJTp4scT0cAeg');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+                            <div class="relative z-10 flex flex-col gap-2">
+                                <span class="font-label-caps text-label-caps text-primary">04 / GELECEK</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Teknoloji</h3>
+                            </div>
+                        </div>
+                        <!-- Organizasyonlar -->
+                        <div class="md:col-span-1 md:row-span-1 group relative overflow-hidden bg-surface-container border border-outline-variant/20 flex flex-col justify-between p-8 hover:border-primary/50 transition-colors">
+                            <div class="absolute right-0 top-0 text-[120px] font-display-lg text-surface-variant/30 leading-none -mt-4 -mr-4 pointer-events-none">OR</div>
+                            <span class="material-symbols-outlined text-on-surface-variant text-[32px]">event_seat</span>
+                            <div class="flex flex-col gap-2 relative z-10 mt-16">
+                                <span class="font-label-caps text-label-caps text-primary">05 / DENEYİM</span>
+                                <h3 class="font-headline-md text-headline-md text-on-surface">Organizasyonlar</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Map Section -->
+            <section class="relative w-full py-24 sm:py-28 lg:py-36 px-5 sm:px-8 md:px-margin-desktop bg-background overflow-hidden border-t border-outline-variant/10">
+                <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] lg:w-[900px] h-[350px] sm:h-[450px] bg-primary/10 blur-[120px] lg:blur-[160px] rounded-full"></div>
+                    <div class="absolute bottom-0 right-[-100px] w-[300px] sm:w-[450px] h-[300px] bg-primary/5 blur-[100px] rounded-full"></div>
+                </div>
+
+                <div class="relative z-10 max-w-max-width mx-auto">
+
+                    <!-- BAŞLIK -->
+                    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 sm:gap-10 mb-10 sm:mb-14 lg:mb-16">
+                        <div class="max-w-3xl">
+                            <div class="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
+                                <span class="w-8 sm:w-12 h-px bg-primary"></span>
+                                <span class="font-label-caps text-[10px] sm:text-label-caps text-primary tracking-[0.2em] sm:tracking-[0.25em] uppercase">
+                                    Kültürel Coğrafyamız
+                                </span>
+                            </div>
+
+                            <h2 class="font-display-lg text-[42px] sm:text-[52px] lg:text-display-lg text-on-surface leading-[0.95]">
+                                Sınırların Ötesinde.<br>
+                                <span class="text-primary italic">Tek Bir Vizyon.</span>
+                            </h2>
+
+                            <p class="font-body-lg text-[15px] sm:text-body-lg text-on-surface-variant mt-6 sm:mt-8 max-w-2xl leading-relaxed">
+                                İstanbul'dan Orta Asya'ya uzanan güçlü bir kültürel iletişim ağı.
+                                Fikirleri, insanları ve hikâyeleri aynı vizyon etrafında buluşturuyoruz.
+                            </p>
+                        </div>
+
+                        <div class="hidden lg:flex flex-col items-end gap-2 shrink-0">
+                            <span class="font-headline-md text-primary">07</span>
+                            <span class="font-label-caps text-[10px] text-on-surface-variant tracking-widest">
+                                KÜLTÜREL MERKEZ
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- NETWORK -->
+                    <div class="relative w-full h-[420px] sm:h-[500px] lg:h-[620px] rounded-sm overflow-hidden border border-outline-variant/20 bg-[#090909] shadow-2xl">
+
+                        <!-- GRID -->
+                        <div class="absolute inset-0 opacity-[0.16]"
+                             style="background-image:radial-gradient(circle at center,#e9c179 1px,transparent 1px);background-size:32px 32px;">
+                        </div>
+
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#050505_85%)]"></div>
+
+                        <!-- ÜST BİLGİ -->
+                        <div class="absolute top-4 sm:top-6 left-4 sm:left-6 z-20 flex items-center gap-2 sm:gap-3">
+                            <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span class="font-label-caps text-[8px] sm:text-[10px] text-on-surface-variant tracking-[0.15em] sm:tracking-[0.2em]">
+                                BALBAL NETWORK
+                            </span>
+                        </div>
+
+                        <div class="absolute top-4 sm:top-6 right-4 sm:right-6 z-20 text-right">
+                            <span class="block font-headline-md text-primary text-xl sm:text-2xl">07</span>
+                            <span class="font-label-caps text-[8px] sm:text-[10px] text-on-surface-variant tracking-widest">
+                                MERKEZ
+                            </span>
+                        </div>
+
+                        <!-- SVG NETWORK -->
+                        <svg class="absolute inset-0 w-full h-full"
+                             viewBox="0 0 1000 600"
+                             preserveAspectRatio="xMidYMid meet">
+
+                            <defs>
+                                <filter id="networkGlow">
+                                    <feGaussianBlur stdDeviation="4" result="blur" />
+                                    <feMerge>
+                                        <feMergeNode in="blur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+
+                                <linearGradient id="networkLine" x1="0" y1="0" x2="1" y2="0">
+                                    <stop offset="0%" stop-color="#e9c179" stop-opacity="0" />
+                                    <stop offset="50%" stop-color="#e9c179" stop-opacity=".8" />
+                                    <stop offset="100%" stop-color="#e9c179" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- ÇİZGİLER -->
+                            <path d="M180 330 Q350 210 500 285 T760 235 T900 320"
+                                  fill="none"
+                                  stroke="url(#networkLine)"
+                                  stroke-width="1.5"
+                                  stroke-dasharray="8 10">
+                                <animate attributeName="stroke-dashoffset"
+                                         from="100"
+                                         to="0"
+                                         dur="5s"
+                                         repeatCount="indefinite" />
+                            </path>
+
+                            <path d="M180 330 Q350 430 520 380 T760 410 T900 320"
+                                  fill="none"
+                                  stroke="#e9c179"
+                                  stroke-opacity=".3"
+                                  stroke-width="1" />
+
+                            <path d="M180 330 Q220 235 320 175"
+                                  fill="none"
+                                  stroke="#e9c179"
+                                  stroke-opacity=".25"
+                                  stroke-width="1" />
+
+                            <!-- NOKTALAR -->
+                            <g filter="url(#networkGlow)">
+                                <circle cx="180" cy="330" r="7" fill="#e9c179" />
+                                <circle cx="500" cy="285" r="5" fill="#e9c179" />
+                                <circle cx="760" cy="235" r="5" fill="#e9c179" />
+                                <circle cx="900" cy="320" r="5" fill="#e9c179" />
+                                <circle cx="520" cy="380" r="4" fill="#e9c179" />
+                                <circle cx="760" cy="410" r="4" fill="#e9c179" />
+                                <circle cx="320" cy="175" r="4" fill="#e9c179" />
+                            </g>
+
+                            <!-- ISTANBUL PULSE -->
+                            <circle cx="180" cy="330" r="22"
+                                    fill="none"
+                                    stroke="#e9c179"
+                                    stroke-opacity=".35">
+                                <animate attributeName="r"
+                                         values="18;36;18"
+                                         dur="2.5s"
+                                         repeatCount="indefinite" />
+                                <animate attributeName="opacity"
+                                         values=".7;0;.7"
+                                         dur="2.5s"
+                                         repeatCount="indefinite" />
+                            </circle>
+
+                            <!-- ŞEHİRLER -->
+                            <g font-family="Inter" font-size="12" letter-spacing="2" fill="#d1c5b4">
+                                <text x="200" y="325" fill="#e9c179">İSTANBUL</text>
+                                <text x="515" y="280">BAKÜ</text>
+                                <text x="775" y="230">TAŞKENT</text>
+                                <text x="915" y="315">ASTANA</text>
+                                <text x="535" y="375">BİŞKEK</text>
+                                <text x="775" y="405">AŞKABAT</text>
+                                <text x="335" y="170">BALKANLAR</text>
+                            </g>
+                        </svg>
+
+                        <!-- ALT GRADIENT -->
+                        <div class="absolute bottom-0 left-0 right-0 h-40 sm:h-48 bg-gradient-to-t from-[#050505] via-[#050505]/70 to-transparent"></div>
+
+                        <!-- ALT BİLGİ -->
+                        <div class="absolute bottom-5 sm:bottom-8 left-5 sm:left-8 right-5 sm:right-8 flex flex-col gap-5 sm:gap-6">
+
+                            <div>
+                                <span class="font-label-caps text-[9px] sm:text-[10px] text-primary tracking-[0.2em]">
+                                    MERKEZ
+                                </span>
+
+                                <h3 class="font-headline-lg text-2xl sm:text-3xl text-on-surface mt-1">
+                                    İstanbul
+                                </h3>
+
+                                <p class="text-xs sm:text-sm text-on-surface-variant mt-1">
+                                    Kültür · Medya · İletişim
+                                </p>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 sm:px-4 py-2 border border-outline-variant/30 text-[9px] sm:text-[10px] text-on-surface-variant tracking-widest">
+                                    AVRASYA
+                                </span>
+
+                                <span class="px-3 sm:px-4 py-2 border border-primary/30 text-[9px] sm:text-[10px] text-primary tracking-widest">
+                                    TÜRK DÜNYASI
+                                </span>
+
+                                <span class="px-3 sm:px-4 py-2 border border-outline-variant/30 text-[9px] sm:text-[10px] text-on-surface-variant tracking-widest">
+                                    BALKANLAR
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ŞEHİR LİSTESİ -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 border-b border-outline-variant/20">
+
+                        <div class="py-5 sm:py-6 text-center border-r border-b lg:border-b-0 border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">İstanbul</span>
+                            <span class="text-[9px] tracking-widest text-primary">01</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center border-b lg:border-b-0 sm:border-r border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Bakü</span>
+                            <span class="text-[9px] tracking-widest text-primary">02</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center border-r border-b lg:border-b-0 border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Taşkent</span>
+                            <span class="text-[9px] tracking-widest text-primary">03</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center border-b lg:border-b-0 sm:border-r md:border-r-0 lg:border-r border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Astana</span>
+                            <span class="text-[9px] tracking-widest text-primary">04</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center border-r border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Bişkek</span>
+                            <span class="text-[9px] tracking-widest text-primary">05</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center border-r border-outline-variant/10">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Aşkabat</span>
+                            <span class="text-[9px] tracking-widest text-primary">06</span>
+                        </div>
+
+                        <div class="py-5 sm:py-6 text-center col-span-2 sm:col-span-1">
+                            <span class="block font-headline-md text-base sm:text-lg text-on-surface">Budapeşte</span>
+                            <span class="text-[9px] tracking-widest text-primary">07</span>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Project Gallery -->
+            <section class="w-full py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-low border-t border-outline-variant/10">
+                <div class="max-w-max-width mx-auto flex flex-col gap-16">
+                    <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                        <div>
+                            <h2 class="font-headline-lg text-headline-lg text-on-surface">Öne Çıkan Projeler</h2>
+                            <p class="font-body-md text-body-md text-on-surface-variant mt-4 max-w-lg">
+                                Kültürel mirasımızı modern üretim kalitesiyle sahneye taşıdığımız seçili çalışmalar.
+                            </p>
+                        </div>
+                        <button class="border border-outline-variant/50 text-on-surface px-6 py-3 font-label-caps text-label-caps hover:border-primary hover:text-primary transition-all duration-300">
+                            TÜM PROJELERİ GÖR
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <a class="group flex flex-col gap-6 cursor-pointer" href="#">
+                            <div class="aspect-[4/5] w-full overflow-hidden relative border border-outline-variant/20">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 opacity-80" data-alt="High quality theatrical set design for a historical cultural play 'Ahilik Kültür Günleri', rich amber and deep blue lighting, artisans working on set, epic cinematic wide shot, fog, historical costumes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRJBpNVgB_uI-yTti2U4pFxs3E_cZZBcA4q8mqQi8HI-gVTZtAN2l7lJ4w8BkimPUvN6TbT4UOx1T0cUMku-05_6TVnYfAa0puN_8ftG5zd8wZokw5EJDGBHiqbwbHG4TeFNNg41X082Pskk5pWNwuZoyk_GYkGGNF6JG4gouDzllTePiGFJwud_yfSlIPEnO3HFgT01Vw150IJrZa1AFdTpnI6W6EF484g9bDlgGaO6N2w0F70hT-tQ')"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-primary border border-primary/30 px-3 py-1 backdrop-blur-md bg-background/50">ETKİNLİK</span>
+                                    <span class="material-symbols-outlined text-on-surface opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Ahilik Kültür Günleri</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Kökleri yüzyıllar öncesine dayanan ahi teşkilatının felsefesini modern sahne sanatlarıyla anlatan dev organizasyon.</p>
+                            </div>
+                        </a>
+                        <!-- Project 2 -->
+                        <a class="group flex flex-col gap-6 cursor-pointer md:mt-12" href="#">
+                            <div class="aspect-[4/5] w-full overflow-hidden relative border border-outline-variant/20">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 opacity-80" data-alt="Key art poster design for the film 'Boğaç', featuring a solitary warrior figure in a stark, misty Central Asian steppe landscape. Minimalist composition, dramatic chiaroscuro, cinematic gold and teal color grading." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAwvEQBL2_kfCVOfaliJGPjytGaw9EEW-Mdx6muCh1mEfl0h6Nz638mBWwUDB7AyrVivxfKyX2Sc2EozeZE53faYe0I_dfjU44Bs4YJ89INlC09FV0xGNiY40kWLFZSj-wQ3NzLTT1jJVCT-FLJ1WVFl5Xa-N38MVEihyah3GAGn14hCoB7SHGuIW8B0vuIm-FkWhZ2PLtk3iEzKElHK7xuNu-xn5FxycI1dkppmRK6Lfp4UUl_3YiKg')"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-primary border border-primary/30 px-3 py-1 backdrop-blur-md bg-background/50">SİNEMA FİLMİ</span>
+                                    <span class="material-symbols-outlined text-on-surface opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Boğaç</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Dede Korkut hikayelerinden ilham alan, epik anlatımı ve güçlü görsel diliyle dikkat çeken sinematografik başyapıt.</p>
+                            </div>
+                        </a>
+                        <!-- Project 3 -->
+                        <a class="group flex flex-col gap-6 cursor-pointer" href="#">
+                            <div class="aspect-[4/5] w-full overflow-hidden relative border border-outline-variant/20">
+                                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 opacity-80" data-alt="Sophisticated film festival red carpet event night, elegant lighting, 'Cengiz Aytmatov Film Haftası' branding subtle in the background, VIP guests mingling, high contrast, warm prestige tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6OEEpMZzJTiDktpi6IoTIT3qg7u7FC6YtgQyVyqUikWRFnh8JtnatxTLDuzoCtZSaKnvDEkPe0Iq7iVlvN0qPZwPun_C0LlVu5qahridJO5tzpi0TY-NHltx3z5ZwPK0ksGbiIgjwNT9G-_l01W38GjuWe5XkAOElDEVsBS7nAPgMKCsbMlAldkk225Y6fQvHPQsQOUaWbmoj2iwpsvK8gHtF5PYeezcLJEQbU6aD-8HxJiYr8ty3rw')"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                                    <span class="font-label-caps text-label-caps text-primary border border-primary/30 px-3 py-1 backdrop-blur-md bg-background/50">FESTİVAL</span>
+                                    <span class="material-symbols-outlined text-on-surface opacity-0 group-hover:opacity-100 transition-opacity translate-x-[-10px] group-hover:translate-x-0 duration-300">arrow_forward</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-on-surface mb-2 group-hover:text-primary transition-colors">Cengiz Aytmatov Film Haftası</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Bozkırın usta kalemi anısına düzenlenen, uluslararası katılımlı prestijli kültürel diplomasi platformu.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Ecosystem Diagram & CTA Section -->
+            <section class="w-full py-40 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/10 relative overflow-hidden flex flex-col items-center justify-center text-center">
+                <!-- Abstract Ecosystem Ring Background -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-outline-variant/10 rounded-full opacity-50"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-outline-variant/20 rounded-full opacity-60"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-primary/30 rounded-full opacity-70 border-dashed"></div>
+                <div class="relative z-10 flex flex-col items-center gap-10 max-w-3xl">
+                    <img alt="BALBAL MEDYA Crest" class="w-24 h-24 object-contain mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8EcXazkYAHBsL1862NV597EIFL8MqEtg5n9lzIwzL-FTmz1-JILc9wxYd-FWH5Svfdh1_H8GIL2Hdn4F7BgEX_x8VA3hbvjIk_ZL55f-44WZ2GIICRhWpck6mBUq4k48MXHq2jLlkVKYd21zVy33loWxXm1nOjGa8fR1nuE-9bURTRH8FnolF9-xmP_OZ0u-00CPrR7t9w_DpTfO9hl3_1o6hsxNMtisgNpIm4F29qF593lD1dlpstA" />
+                    <h2 class="font-display-lg text-display-lg text-on-surface">
+                        Geleceğe İz Bırakan<br />
+                        <span class="text-primary italic">Hikâyeler Üretelim.</span>
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-lg">
+                        Ortak mirasımızı, en üst düzey prodüksiyon standartları ve yenilikçi medya teknolojileriyle dünyayla paylaşıyoruz. Bizimle iletişime geçin.
+                    </p>
+                    <button class="mt-8 bg-primary-container text-on-primary px-10 py-5 font-label-caps text-label-caps hover:bg-primary transition-all duration-300 shadow-xl shadow-primary/10">
+                        İLETİŞİME GEÇİN
+                    </button>
+                </div>
+            </section>
+        </div>
+        <script>
+            // Simple intersection observer to add elegant fade-up animations on scroll
+            document.addEventListener("DOMContentLoaded", () => {
+              const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+              const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    observer.unobserve(entry.target);
+                  }
+                });
+              }, observerOptions);
+
+              // Apply base transition classes to sections that should fade in
+              const animatedElements = document.querySelectorAll('section > div.max-w-max-width');
+              animatedElements.forEach(el => {
+                el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+                observer.observe(el);
+              });
+            });
+        </script>
+    </main>
+    <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/20 pt-20 pb-10"><div class="max-w-max-width mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20"><div class="col-span-1 md:col-span-1"><img alt="Logo" class="h-10 w-auto mb-6 grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8EcXazkYAHBsL1862NV597EIFL8MqEtg5n9lzIwzL-FTmz1-JILc9wxYd-FWH5Svfdh1_H8GIL2Hdn4F7BgEX_x8VA3hbvjIk_ZL55f-44WZ2GIICRhWpck6mBUq4k48MXHq2jLlkVKYd21zVy33loWxXm1nOjGa8fR1nuE-9bURTRH8FnolF9-xmP_OZ0u-00CPrR7t9w_DpTfO9hl3_1o6hsxNMtisgNpIm4F29qF593lD1dlpstA" /><p class="font-body-md text-on-surface-variant/70">Kültür, sanat ve teknolojinin kesişim noktasında, küresel hikayeler inşa ediyoruz.</p></div><div><h4 class="font-label-caps text-label-caps text-primary mb-6">KURUMSAL</h4><ul class="space-y-4"><li class="text-on-surface-variant hover:text-primary cursor-pointer">Hakkımızda</li><li class="text-on-surface-variant hover:text-primary cursor-pointer">Vizyon &amp; Misyon</li><li class="text-on-surface-variant hover:text-primary cursor-pointer">Ekibimiz</li></ul></div><div><h4 class="font-label-caps text-label-caps text-primary mb-6">İLETİŞİM</h4><p class="text-on-surface-variant mb-2">Maslak, İstanbul, TR</p><p class="text-on-surface-variant mb-2">info@balbalmedya.com</p><p class="text-on-surface-variant">+90 212 000 00 00</p></div><div><h4 class="font-label-caps text-label-caps text-primary mb-6">SOSYAL MEDYA</h4><div class="flex gap-4"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">language</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">movie</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">share</span></div></div></div><div class="pt-10 border-t border-outline-variant/10 text-center"><p class="text-label-caps text-on-surface-variant/40 tracking-widest text-[10px]">© 2024 BALBAL MEDYA. PRESTIGE IN PRODUCTION.</p></div></div></footer>
+</body>
+</html>
